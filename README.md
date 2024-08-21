@@ -3,11 +3,8 @@
 A new Flutter package project.
 ## Features
 
- - `endless` and `bouncing` modes
- - delay and pause between rounds
- - max number of rounds
- - custom velocity
- - `style` and `textAlign` support
+ - user can make fancy type container
+ - easy and simple decoration
 
 ## Getting started
 
@@ -17,7 +14,7 @@ To use this package, add text_scroll as a dependency in your pubspec.yaml file.
 
 Minimal example:
 ```add dependeces
-  new_fancy_flutter_container: ^0.0.4
+  new_fancy_flutter_container: ^0.0.5
 ```
 
 ```import
