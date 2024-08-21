@@ -16,23 +16,68 @@ To use this package, add text_scroll as a dependency in your pubspec.yaml file.
 ## Usage
 
 Minimal example:
+```add dependeces
+  new_fancy_flutter_container: ^0.0.4
+```
 
-```dart
-    TextScroll('This is the sample text for Flutter TextScroll widget. ')
+```import
+    import 'package:new_fancy_flutter_container/fancy_container.dart';
 ```
 
 Custom settings:
 
 ```dart
-    TextScroll(
-        'This is the sample text for Flutter TextScroll widget. ',
-        mode: TextScrollMode.bouncing,
-        velocity: Velocity(pixelsPerSecond: Offset(150, 0)),
-        delayBefore: Duration(milliseconds: 500),
-        numberOfReps: 5,
-        pauseBetween: Duration(milliseconds: 50),
-        style: TextStyle(color: Colors.green),
-        textAlign: TextAlign.right,
-        selectable: true,
-    )
+   import 'package:flutter/material.dart';
+import 'package:new_fancy_flutter_container/fancy_container.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
+      ),
+      home: myHome(),
+    );
+  }
+}
+
+class myHome extends StatefulWidget {
+  const myHome({super.key});
+
+  @override
+  State<myHome> createState() => _myHomeState();
+}
+
+class _myHomeState extends State<myHome> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: FancyContainer(
+        height: MediaQuery.of(context).size.height / 2,
+        color1: Colors.amber,
+        color2: Colors.black,
+        width: MediaQuery.of(context).size.width,
+        child: Center(
+          child: Text(
+            "data",
+            style: TextStyle(
+                color: Colors.white, fontSize: 40, fontWeight: FontWeight.w600),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
 ```
