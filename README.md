@@ -1,4 +1,4 @@
-# fancy_container
+# fancy_container_update
 
 A new Flutter package project.
 ## Features
