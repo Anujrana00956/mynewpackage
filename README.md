@@ -1,6 +1,8 @@
-# fancy_container_update
+# new_fancy_flutter_container
 
 A new Flutter package project.
+![Screenshot_1724221625](https://github.com/user-attachments/assets/0e8acb01-4b0d-4c02-b471-eb84252f94f3)
+
 ## Features
 
  - user can make fancy type container
